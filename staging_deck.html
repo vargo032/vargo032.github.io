@@ -38,11 +38,11 @@ svg {
 </style>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js"></script>
-<script src="http://mbostock.github.com/d3/d3.csv.js?2.7.1"></script>
+<!-- <script src="http://mbostock.github.com/d3/d3.csv.js?2.7.1"></script> -->
 <script>
 
 var m = [30, 10, 10, 10],
-    w = 960 - m[1] - m[3],
+    w = 860 - m[1] - m[3],
     h = 500 - m[0] - m[2];
 
 var x = d3.scale.ordinal().rangePoints([0, w], .5),
@@ -59,7 +59,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.csv("cost-of-living.csv", function(cities) {
+d3.csv("http://vargo032.github.io/cost-of-living.csv", function(cities) {
 
   // Extract the list of dimensions and create a scale for each.
   x.domain(dimensions = d3.keys(cities[0]).filter(function(d) {
