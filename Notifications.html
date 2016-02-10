@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Data Notifications</title>
+      <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="search.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="todo.js" charset="utf-8"></script>
   </head>
 
   <body>
@@ -36,32 +38,27 @@
 <div class="jumbotron" >
   <div class="container" >
   <h1>Hello, you!</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  <p>Use this area to subscribe yourself to future notifications and data analytics tools.</p>
+  <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+  <button type="button" class="btn btn-default btn-lg" href="#">Learn More</button>
   </div>
 </div>
 
 
-    <h1>Hello!</h1>
-<script src="todo.js" charset="utf-8"></script>
 <div class="container">
-
       <div class="page-header">
         <h1>
-          To Do
-          <small><span class="total">0 items</span></small>
-          <a class="btn btn-primary pull-right" href="#">Add Item</a>
+          Subscribed Individuals
+
+          <a class="btn btn-primary pull-right ov" href="#">Add Yourself</a>
         </h1>
       </div>
-
       <div class="row">
         <div class="col-md-12">
           <ol class="todo-list">
-
           </ol>
         </div>
       </div>
-
     </div>
 
     <Div class="container">
@@ -91,6 +88,7 @@
                 </tbody>
               </table>
             </div>
+          <footer>
             <div class="col-md-5">
               <address>
                 <h2>FRB Chicago</h2><br>
@@ -102,6 +100,40 @@
               </address>
           </div>
         </div>
+          <div class = "container">
+              <div class = "row">
+                <div class="col-sm-offset-1">
+                  <ul class="list-inline text-center">
+                      <li>
+                          <a href="https://twitter.com/vargo032">
+                              <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.facebook.com/Vargo032">
+                              <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/vargo032">
+                              <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                              </span>
+                          </a>
+                      </li>
+                      <p class="copyright text-muted">Copyright © Vargo Productions 2016</p>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </footer>
     </div>
   </body>
 </html>

@@ -1,7 +1,7 @@
-// This section of code is how we prepare our code
-// so this it is prepared to react to user events.
+
+// event handler
 $(document).ready(function() {
-  $(".btn").on("click", addItem);
+  $(".ov").on("click", addItem);
   // $(".link-delete").on("click", deleteItem);
   $("ol").on("click", ".link-delete", deleteItem);
 });
@@ -10,18 +10,18 @@ $(document).ready(function() {
 // and then appends it to the existing list of items.
 // It also updates the counter at the top of the screen.
 function addItem() {
-  var text = window.prompt("New To-Do Item");
+  var text = window.prompt("New member");
   var delete_link = '<a href="#" class="link-delete">(Delete)</a>'
-  // console.log("Yup!");
+
   $("ol").append("<li>" + text + " " + delete_link + "</li>");
   var numItems = $("li").length;
 
   // Challenge: Differentiate between 1 item vs. more items
   if (numItems == 1) {
-    $(".total").html(numItems + " item");
+    $(".total").html(numItems + " member");
   }
   else {
-    $(".total").html(numItems + " items");
+    $(".total").html(numItems + " members");
   }
 }
 
